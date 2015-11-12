@@ -62,10 +62,7 @@ void print_collection_term_weight(indri::collection::Repository& r, const std::s
 }
 
 void usage() {
-    std::cout << "    IndriTextTransformer -index=... -term=... [-debug=0]" << std::endl;
-    std::cout << "    1. index - index path" << std::endl;
-    std::cout << "    2. file - input file that contains all terms" << std::endl; 
-    std::cout << "    3. debug - whether print debug info" << std::endl; 
+    std::cout << "    IndriTextTransformer -index=<index path> -term=<input file that contains all terms> [-debug=0]" << std::endl;
 }
 
 void require_parameter( const char* name, indri::api::Parameters& p ) {
